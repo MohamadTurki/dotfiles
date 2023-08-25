@@ -1,0 +1,7 @@
+start=270.311708
+pause=yes
+fullscreen=yes
+brightness=1
+vf=@blackout:!lavfi=graph=
+af=@silencedetect:!lavfi=graph=%32%silencedetect=noise=-45dB:d=0.85
+sid=2

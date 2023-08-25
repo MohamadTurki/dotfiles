@@ -1,0 +1,43 @@
+"st fish"
+Mod4 + Return
+
+"dmenu_run"
+Mod4 + d
+
+"pcmanfm"
+Mod4 + e
+
+"firefox"
+Mod4 + s
+
+"slock"
+Scroll_Lock
+
+"(date "+%H:%M:%S"; sleep 1) | umess -bl -f "Blex Mono Nerd Font:size=25" -F "#e0e0e0" -B "#000000""
+Mod4 + z
+
+"~/scripts/shell/layout"
+Alt + Shift_L
+
+"~/scripts/shell/colorpicker"
+Mod4 + p
+
+"~/scripts/shell/sshot -n -f -x"
+Print
+
+"~/scripts/shell/sshot -s -c -n"
+Mod4 + Print
+
+"~/scripts/shell/sshot -s -f -x -n"
+Mod4 + Shift + Print
+
+"pamixer --allow-boost -d 5 && pkill -RTMIN+10 dwmblocks"
+XF86AudioLowerVolume
+
+"pamixer --allow-boost -i 5 && pkill -RTMIN+10 dwmblocks"
+XF86AudioRaiseVolume
+
+"pamixer -t && pkill -RTMIN+10 dwmblocks"
+XF86AudioMute
+
+

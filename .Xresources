@@ -1,0 +1,28 @@
+
+*.color0:           #252550
+*.color1:           #D7263D
+*.color2:           #e5b3fe
+*.color3:           #FFAE03
+*.color4:           #0061FE
+*.color5:           #F53385
+*.color6:           #51BDFF
+*.color14:		      #51BDFF
+*.color7:           #E0E0E0
+*.color8:           #353570
+*.color9:           #E7365D
+*.color10:		      #C0EB63
+*.color11:		      #FFBE23
+*.color12:		      #1071FE
+*.color13:		      #F543A5
+*.color15:		      #FFFFFF
+*.background:       #16141C
+*.foreground:       #F1F7ED
+*.cursorColor:      #e0e0e0
+/* *.font: "BlexMono Nerd Font Mono:pixelsize=15:antialias=true:autohint=true" */
+/* *.shell: "/usr/bin/fish" */
+
+dmenu.background: #0A0E12
+dmenu.selforeground: #e0e0e0
+dmenu.selbackground: #2B303B
+dmenu.font: "BlexMono Nerd Font Mono:pixelsize=16"
+

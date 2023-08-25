@@ -1,0 +1,54 @@
+  if status is-interactive
+  set fish_greeting
+    # Commands to run in interactive sessions can go here
+    alias games='cd /home/heho/.local/share/bottles/bottles/main/drive_c/Games'
+    alias i3c='code ~/.config/i3/config'
+    alias cb="xclip -selection clipboard"
+    alias lib32-find="aa -Qsq | grep lib32 | fzf | xargs pacman -Qi"
+    alias lspci-fzf="lspci | fzf --preview-window='top:50%:nowrap' --preview=\"echo {} | grep -o '[0-9a-zA-Z][0-9a-zA-Z]:[0-9a-zA-Z][0-9a-zA-Z]\.[0-9a-zA-Z]' | xargs -I[] lspci -k -s [] | grep -z --color=always -e '[0-9a-zA-Z][0-9a-zA-Z]:[0-9a-zA-Z][0-9a-zA-Z]\.[0-9a-zA-Z]'\""
+    alias fonts='fc-list --format="%{family}\n" | cut -d , -f 1 | sort | uniq | sed -z "s/\n//" | fzf | cb'
+    alias icons='ls -l /usr/share/icons/'
+    alias encrypt='gpg -c --no-symkey-cache --cipher-algo AES256'
+    alias passwords='keepassxc ~/.important/passes'
+    alias turkish='~/scripts/turkish.sh'
+    alias location='python3 ~/scripts/location.py'
+    alias bspwmrc='vim ~/.config/bspwm/bspwmrc'
+    alias sxhkdrc='vim ~/.config/sxhkd/sxhkdrc'
+    alias mirrorlist='cat /etc/pacman.d/mirrorlist'
+    alias vimrc='vim ~/.vimrc'
+    alias vimp='vim ~/.vimrc.plug'
+    alias ll='ls -alF'
+    alias get_template='cp /home/heho/Templates/1.tex note.tex'
+    alias grep='grep --color=auto'
+    alias edita='kwrite ~/.config/fish/config.fish'
+    alias refresha='source ~/.config/fish/config.fish'
+    alias bashrc='kwrite ./.bashrc &'
+    alias aa='paru'
+    alias trafic='sudo tcpdump -i enp37s0 -s 0 -w ~/Documents/output.pcap'
+    alias showtrafic='wireshark ~/Documents/output.pcap'
+    alias dl_history='shred ~/.local/share/fish/fish_history && rm ~/.local/share/fish/fish_history && history clear'
+    alias show_history='cat ~/.local/share/fish/fish_history'
+    alias dersler='feh ~/life/study/dersprogrami/dersprogrami.png'
+    alias scripts="cd ~/scripts"
+    alias study="cd ~/life/study/sessions && ~/scripts/study.sh"
+    alias life='cd ~/life'
+    alias plan='zathura ~/life/plans/life_plan/plans.pdf'
+#     alias workout='imv /home/mad/life/workout/workout.png'
+# To-Do list app
+# alias todos="python3 ~/scripts/todo_list/main.py show"
+# alias todor="python3 ~/scripts/todo_list/main.py remove --index"
+# alias todom="python3 ~/scripts/todo_list/main.py mark --index"
+
+end
+
+# function todoe
+    # python3 ~/scripts/todo_list/main.py edit --index $argv[1] --name "$argv[2..-1]"
+# end
+# 
+# 
+# function todoa
+    # python3 ~/scripts/todo_list/main.py add --item "$1"
+# end
+
+
+

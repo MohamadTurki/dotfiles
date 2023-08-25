@@ -1,0 +1,13 @@
+[Default Applications]
+x-scheme-handler/insomnia=insomnia.desktop
+image/webp=imv.desktop
+inode/directory=thunar.desktop
+x-scheme-handler/etcher=balena-etcher.desktop
+application/pdf=org.pwmt.zathura.desktop
+
+[Added Associations]
+image/webp=imv.desktop;
+text/plain=nvim.desktop;org.kde.kwrite.desktop;
+application/pdf=org.inkscape.Inkscape.desktop;org.pwmt.zathura.desktop;
+image/jpeg=imv.desktop;
+image/png=sxiv.desktop;
