@@ -1,0 +1,6 @@
+#! /bin/sh
+
+curl wttr.in
+xdg-open "https://www.youtube.com/playlist?list=PL83aCqHNwOCYEiGOhwlVhTX6G_xJ082bC" &
+echo ""
+glow ~/sectors/todos/currTodos.md &

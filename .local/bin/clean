@@ -1,0 +1,12 @@
+# Remove cached package files
+sudo pacman -Sc
+
+# Remove orphaned packages (no longer needed)
+sudo pacman -Rns $(pacman -Qdtq)
+
+# Delete old journal logs (if using systemd journal)
+sudo journalctl --vacuum-size=100M
+
+# Clean package cache and old logs together
+sudo paccache -r
+

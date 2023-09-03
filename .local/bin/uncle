@@ -1,0 +1,6 @@
+#!/bin/bash
+
+UNCLE_VOICE="/home/heho/Music/output.wav"
+
+xkill 
+aplay "$UNCLE_VOICE"

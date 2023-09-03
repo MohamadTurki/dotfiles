@@ -1,0 +1,10 @@
+#!/bin/bash
+
+start=$(date +%s)
+while true; do
+    now=$(date +%s)
+    elapsed=$((now - start))
+    echo "Time elapsed: $elapsed seconds"
+    sleep 1
+done
+

@@ -1,4 +1,3 @@
-
 *.color0:           #252550
 *.color1:           #D7263D
 *.color2:           #e5b3fe
@@ -24,5 +23,17 @@
 dmenu.background: #0A0E12
 dmenu.selforeground: #e0e0e0
 dmenu.selbackground: #2B303B
-dmenu.font: "BlexMono Nerd Font Mono:pixelsize=16"
+dmenu.font: "BlexMono Nerd Font Mono:pixelsize=16:antialias=true:autohint=true"
 
+dwm.normbordercolor: #1C1C1C
+dwm.normbgcolor: #0A0E12
+dwm.normfgcolor: #D7E7Ed
+dwm.selbordercolor: #D7E7ED
+dwm.selbgcolor: #e0e0e0
+dwm.selfgcolor: #1E1E2E
+dwm.tagsnormbgcolor: #0A0E12
+dwm.tagsnormfgcolor: #e0e0e0
+dwm.tagsselbg: #2B303b
+dwm.tagsselfg: #2B303b
+
+/* dmenu.font: "BlexMono Nerd Font Mono:pixelsize=16" */

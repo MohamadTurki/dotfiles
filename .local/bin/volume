@@ -1,0 +1,17 @@
+#! /bin/sh
+
+if [ "$1" == "up" ]; then
+  pamixer --allow-boost -i 5
+elif [ "$1" == "down" ]; then
+  pamixer --allow-boost -d 5
+elif [ "$1" == "mute" ]; then
+  pamixer -t
+elif [ "$1" == "get" ]; then
+  pamixer --get-volume
+elif [ "$1" == "get-mute" ]; then
+  pamixer --get-mute
+fi
+
+if pgrep "dwmblocks" > /dev/null; then
+  pkill -RTMIN+10 dwmblocks
+fi

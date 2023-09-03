@@ -1,0 +1,16 @@
+#! /bin/sh
+DWM_FLEXIPATCH_DIR=~/suckless/dwm-flexipatch
+DWM_FINALIZER_DIR=~/suckless/dwm-flexipatch-finalizer
+DWM=~/suckless/dwm
+
+if [ "$1" == "clean" ]; then
+    rm -rf "$DWM"
+    mkdir "$DWM"
+    "$DWM_FINALIZER_DIR/flexipatch-finalizer.sh" -r -d "$DWM_FLEXIPATCH_DIR" -o $DWM
+    cd "$DWM" && sudo make clean install
+    echo "Dwm compiled successfully with lifa"
+else
+    cd "$DWM_FLEXIPATCH_DIR" && sudo make clean install
+    echo "Dwm compiled successfully"
+fi
+

@@ -1,0 +1,1 @@
+convert -size 1920x1080 xc:#0A0E12 ~/Pictures/wallpapers/solid/"$(date +"%H:%M:%S")".png

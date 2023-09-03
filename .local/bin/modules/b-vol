@@ -1,0 +1,17 @@
+#!/bin/sh
+
+vol=$(pamixer --get-volume)
+
+if [ "$(pamixer --get-mute)" == "true" ]; then
+  echo "MUTED  "
+  exit
+fi
+# 󰖁 for mute
+case 1 in
+	$((vol >= 70)) ) icon="" ;;
+	$((vol >= 30)) ) icon="" ;;
+	$((vol >= 1)) ) icon="" ;;
+	* ) echo "MUTED  "
+esac
+
+echo "   $icon  $vol%  "

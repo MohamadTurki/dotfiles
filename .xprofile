@@ -1,0 +1,6 @@
+#!/bin/sh
+
+xwallpaper --stretch ~/Pictures/wallpapers/14.png &
+xbindkeys &
+xrdb .Xresources &
+xset r rate 250 30 &

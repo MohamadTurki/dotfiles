@@ -1,0 +1,9 @@
+#! /bin/sh
+
+curr_layout=$(setxkbmap -query | grep layout | awk '{print $2}' | tr '[:lower:]' '[:upper:]')
+
+if [ "$curr_layout" = "ARA" ]; then
+  curr_layout="AR"
+fi
+
+echo "󰌌 $curr_layout "

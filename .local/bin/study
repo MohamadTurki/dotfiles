@@ -1,0 +1,5 @@
+study_source='https://www.youtube.com/playlist?list=PLX2gX-ftPVXX_bDWBA2qhZE-VFgvZur4d'
+xdg-open "$study_source"
+nohup st termdown >/dev/null 2>&1 &
+nohup libreoffice ~/sectors/study/study.xlsx >/dev/null 2>&1 &
+cd ~/sectors/study/notes/ && cp /home/heho/Templates/math.tex note.tex && nvim note.tex
