@@ -550,7 +550,7 @@
  * then all processes from autostart array will be killed.
  * https://dwm.suckless.org/patches/cool_autostart/
  */
-#define COOL_AUTOSTART_PATCH 0
+#define COOL_AUTOSTART_PATCH 1
 
 /* The cyclelayouts patch lets you cycle through all your layouts.
  * https://dwm.suckless.org/patches/cyclelayouts/
@@ -948,7 +948,7 @@
  * Additionally dwm can quit cleanly by using kill -TERM dwmpid.
  * https://dwm.suckless.org/patches/restartsig/
  */
-#define RESTARTSIG_PATCH 0
+#define RESTARTSIG_PATCH 1
 
 /* Adds rio-like drawing to resize the selected client.
  * This depends on an external tool slop being installed.

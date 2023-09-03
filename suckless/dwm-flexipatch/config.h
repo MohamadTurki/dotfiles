@@ -437,7 +437,8 @@ static const char *layoutmenu_cmd = "layoutmenu.sh";
 
 #if COOL_AUTOSTART_PATCH
 static const char *const autostart[] = {
-	"st", NULL,
+  /* dwmblocks */
+	"dwmblocks", NULL,
 	NULL /* terminate */
 };
 #endif // COOL_AUTOSTART_PATCH
@@ -533,7 +534,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "UTILITY", .isfloating = 1)
 	RULE(.wintype = WTYPE "TOOLBAR", .isfloating = 1)
 	RULE(.wintype = WTYPE "SPLASH", .isfloating = 1)
-	RULE(.class = "Gimp", .tags = 1 << 4)
+	/* RULE(.class = "Gimp", .tags = 1 << 4) */
 	RULE(.class = "Firefox", .tags = 1 << 7)
 	#if RENAMED_SCRATCHPADS_PATCH
 	RULE(.instance = "spterm", .scratchkey = 's', .isfloating = 1)
@@ -1109,7 +1110,7 @@ static const Key keys[] = {
 	#endif // SELFRESTART_PATCH
 	{ MODKEY|ShiftMask,             XK_q,          quit,                   {0} },
 	#if RESTARTSIG_PATCH
-	{ MODKEY|ControlMask|ShiftMask, XK_q,          quit,                   {1} },
+	{ MODKEY|ShiftMask, XK_r,          quit,                   {1} },
 	#endif // RESTARTSIG_PATCH
 	#if FOCUSURGENT_PATCH
 	{ MODKEY,                       XK_u,          focusurgent,            {0} },
